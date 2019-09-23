@@ -49,7 +49,8 @@ void renderDots() {
     fill(127, 100);
     ellipse(dots[i].x, dots[i].y, 33, 33);
   }
-  stroke(0);
+  strokeWeight(5);
+  stroke(random(255),random(255),random(255));
   for (int i = 0; i < nDots; i++) {
     for (int j = i + 1; j < nDots; j++) {
       float d = dist(dots[i].x, dots[i].y, dots[j].x, dots[j].y);
